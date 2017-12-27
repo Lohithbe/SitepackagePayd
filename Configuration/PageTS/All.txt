@@ -1,0 +1,7 @@
+#
+# PageTS for Site Package Payd
+#
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:site_package_payd/Configuration/PageTS/RTE.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:site_package_payd/Configuration/PageTS/TCEFORM.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:site_package_payd/Configuration/PageTS/TCEMAIN.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:site_package_payd/Configuration/PageTS/Mod/WebLayout/BackendLayouts.txt">

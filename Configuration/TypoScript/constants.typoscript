@@ -1,0 +1,58 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript">
+
+
+############
+### PAGE ###
+############
+page {
+    logo {
+        file = EXT:site_package_payd/Resources/Public/Images/logo.svg
+        fileInverted = EXT:site_package_payd/Resources/Public/Images/logo-inverted.svg
+        height = 52
+        width = 192
+        alt = Site Package Payd
+        linktitle = Site Package Payd
+    }
+    favicon {
+        file = EXT:site_package_payd/Resources/Public/Icons/favicon.ico
+    }
+    fluidtemplate {
+        layoutRootPath = EXT:site_package_payd/Resources/Private/Layouts/Page/
+        partialRootPath = EXT:site_package_payd/Resources/Private/Partials/Page/
+        templateRootPath = EXT:site_package_payd/Resources/Private/Templates/Page/
+    }
+}
+
+
+##################
+### EXTENSIONS ###
+##################
+plugin.bootstrap_package {
+    view {
+        layoutRootPath = EXT:site_package_payd/Resources/Private/Layouts/
+        partialRootPath = EXT:site_package_payd/Resources/Private/Partials/
+        templateRootPath = EXT:site_package_payd/Resources/Private/Templates/
+    }
+}
+
+
+########################
+### CONTENT ELEMENTS ###
+########################
+plugin.bootstrap_package_contentelements {
+    view {
+        layoutRootPath = EXT:site_package_payd/Resources/Private/Layouts/ContentElements/
+        partialRootPath = EXT:site_package_payd/Resources/Private/Partials/ContentElements/
+        templateRootPath = EXT:site_package_payd/Resources/Private/Templates/ContentElements/
+    }
+}
+
+
+#######################################
+### REMOVE BOOTSTRAP LESS CONSTANTS ###
+#######################################
+plugin.bootstrap_package.settings.less >
+plugin.bootstrap_package.settings.overrideLessVariables >
